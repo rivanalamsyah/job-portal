@@ -1,0 +1,544 @@
+/* Style navbar */
+.container {
+    margin-bottom: 10px; /* Menambahkan margin bawah */
+    margin-top: 15px; /* Menambahkan margin atas */
+    padding: 15px; /* Menambahkan padding di dalam container */
+    border-radius: 1px; /* Menggunakan border-radius untuk sudut yang lebih halus */
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.background-container-user {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/header_user.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background-container-testimony {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/bg_testi.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background-search {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/bg_search.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -150px;
+    margin-bottom: -150px;
+}
+
+.background-search .form-floating-sm {
+    margin-top: -320px;
+}
+
+.background-search .form-floating-lg {
+    margin-top: -150px;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Menghapus padding pada kolom dalam grid Bootstrap */
+.row.no-gutters [class^="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+/* Menghapus margin antar kolom */
+.no-gutters {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+/* Menyesuaikan padding pada input dan tombol */
+.input-group, .btn {
+    margin-bottom: 10px; /* Optional: Menambahkan jarak antara elemen-elemen */
+}
+
+.navbar {
+    transition: top 0.3s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Garis bawah aktif */
+.active-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+/* Menyesuaikan margin untuk setiap nav item */
+.nav-item {
+    margin-bottom: 5px;
+}
+
+/* Mengubah warna link navbar yang tidak aktif menjadi abu-abu */
+.nav-item:not(.active) .nav-link {
+    border-bottom: none;
+    color: #808080; /* Mengubah warna menjadi abu-abu */
+}
+
+/* Custom CSS untuk gambar */
+.image-container {
+    text-align: center;
+}
+
+/* Mengatur gambar agar responsif */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.small {
+    font-size: smaller; /* Atur ukuran font menjadi lebih kecil */
+}
+
+.small-bold {
+    font-size: smaller; /* Atur ukuran font menjadi lebih kecil */
+    font-weight: bold; /* Tetapkan tebal pada teks */
+}
+
+/* Bagian utama */
+.ui.segment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px; 
+    padding-top: 20px; 
+}
+
+/* Kolom di dalam segmen */
+.ui.segment .column {
+    text-align: right;
+}
+
+/* Pembatas vertikal */
+.ui.vertical.divider {
+    font-size: 20px;
+}
+
+/* Kontainer bagian */
+.section-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom dengan lebar yang sama */
+    gap: 10px; /* Jarak antar bagian */
+    align-items: center; /* Memusatkan konten secara vertikal */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Mengatur gambar di dalam kontainer bagian */
+.section-container img {
+    width: 20px; /* Mengatur lebar gambar */
+    height: auto; /* Menjaga aspek rasio gambar */
+    border-radius: 5px;
+    float: left; /* Gambar diletakkan di sebelah kiri */
+    margin-right: 10px; /* Memberikan jarak antara gambar dan judul */
+}
+
+/* Mengatur judul */
+.content h6 {
+    margin: 0; /* Menghilangkan margin */
+}  
+
+/* Kategori kandidat */
+.card {
+    display: flex;
+    position: relative; /* Menjadikan posisi relatif untuk menempatkan tombol */
+}
+
+/* Gambar di dalam kartu */
+.card .card-img-top {
+    width: 30%; /* Lebar gambar */
+    border-radius: 0; /* Hilangkan border-radius bawaan */
+}
+
+/* Isi kartu */
+.card .card-body {
+    flex: 1; /* Konten akan mengisi sisa ruang yang tersedia */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem; /* Tambahkan padding agar konten terlihat lebih rapi */
+    position: relative; /* Menjadikan posisi relatif untuk menempatkan tombol */
+}
+
+/* Judul kartu */
+.card .card-title {
+    font-size: 1.25rem; /* Ukuran font judul */
+    margin-bottom: 0.5rem; /* Jarak antara judul dan deskripsi */
+}
+
+/* Deskripsi kartu */
+.card .card-text {
+    font-size: 0.75rem; /* Ukuran font deskripsi */
+    margin-bottom: 1; /* Hapus margin bawah untuk mencegah jarak ekstra */
+}
+
+/* Animasi untuk efek shadow pada kartu */
+.card {
+    transition: box-shadow 0.3s; /* Transisi efek shadow */
+    animation: pulse 1s infinite; /* Animasi menyala */
+}
+
+/* Animasi ketika kartu dihover */
+.card:hover,
+.card:focus {
+    animation: none; /* Menghentikan animasi saat hover atau focus */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek shadow saat hover atau focus */
+}
+
+/* Isi kartu */
+.card-titlejob,
+.card-subtitlejob {
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+/* Keyframes untuk animasi */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); /* Warna awal */
+    }
+    100% {
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0); /* Warna yang dituju */
+    }
+}
+
+/* Footer */
+footer {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    max-height: 50px;
+}
+
+.footer-menu,
+.footer-more,
+.social-media-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-menu li,
+.footer-more li {
+    margin-bottom: 10px;
+}
+
+.social-media-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media-icons li:last-child {
+    margin-right: 0;
+}
+
+.footer-menu a,
+.footer-more a,
+.social-media-icons a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover,
+.footer-more a:hover,
+.social-media-icons a:hover {
+    color: #007bff;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Slider */
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, white 8%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    display: flex;
+    width: fit-content; /* Menggunakan fit-content untuk lebar agar slide tidak terputus */
+    position: relative;
+    animation: scroll 60s linear infinite; /* Animasi scroll untuk membuat slide bergerak */
+    animation: carousel 30s linear infinite;
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+/* Animasi untuk menggeser slide */
+@keyframes carousel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7)); /* Sesuaikan dengan jumlah total slide */ }
+}
+
+/* Testimoni */
+.text-center {
+    text-align: center;
+}
+
+.text-center h2 {
+    display: inline-block;
+    text-align: left;
+}
+
+.topjob {
+    display: flex;
+    margin-left: 1px;
+}
+
+.card .testimonial,
+.card .verified-testimonial,
+.card .card-body {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.lorem-ipsum {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 8px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.small-artboard {
+    max-width: 250px; /* Sesuaikan ukuran yang diinginkan */
+    display: block;
+    margin-right: 50px; /* Sesuaikan jarak dengan card */
+    margin-top: 0px;
+    float: left; /* Untuk membuat gambar berada di sebelah kiri */
+}
+
+/* Style untuk tombol "See More" */
+.btn-see-more {
+    background-color: #91c6ff; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 8px 16px; /* Padding atas dan bawah 8px, padding kiri dan kanan 16px */
+    border: none; /* Tidak ada border */
+    border-radius: 4px; /* Sudut melengkung */
+    cursor: pointer; /* Menampilkan ikon kursor saat diarahkan */
+    transition: background-color 0.3s ease; /* Transisi ketika mengubah warna latar belakang */
+}
+
+/* Hover state untuk tombol "See More" */
+.btn-see-more:hover {
+    background-color: #c7e2ff; /* Warna latar belakang ketika dihover */
+}
+
+/* Active state untuk tombol "See More" */
+.btn-see-more:active {
+    background-color: #68a5e1; /* Warna latar belakang ketika tombol ditekan */
+}
+
+/* top job circulars */
+.fs-8 {
+    font-size: 0.90rem !important;
+}
+
+.card-text {
+    padding: 0 1px;
+    overflow: hidden;
+}
+
+.fs-9 {
+    font-size: 0.625rem !important;
+}
+
+/* Atur margin dan padding kartu secara umum */
+.card {
+    width: 100%; /* Misalnya, lebar kartu diatur ke 80% dari lebar layar */
+    margin: auto; /* Pusatkan kartu di tengah halaman */
+    padding: 5px; /* Tambahkan padding ke kartu jika diperlukan */
+}
+
+/* Atur margin dan padding tombol */
+.btn-custom {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 3; /* Hapus margin kiri */
+    margin-right: 3; /* Hapus margin kanan */
+    padding: 5px; /* Kurangi padding agar tombol lebih ramping */
+    width: calc(100% - 2px); /* Sesuaikan lebar tombol dengan lebar kartu */
+}
+
+/* Tambahkan media query jika diperlukan */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Atur ulang lebar kartu untuk layar yang lebih kecil jika diperlukan */
+    }
+}
+
+.btn-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    /* Ubah margin label */
+    padding: 1px 1px;
+    /* Ubah padding label */
+    padding: 0.25rem 0.3rem; /* Atur padding tombol */
+    font-size: 0.65rem; /* Atur ukuran font */
+}
+
+.btn-tag {
+    margin-top: 5px; /* Atur jarak antara teks dan tombol */
+    margin-left: 15px; /* Atur jarak kiri tombol */
+    margin-bottom: 15px; /* Atur jarak ke bawah teks */
+    padding: 0.25rem 0.3rem; /* Atur padding tombol */
+    font-size: 0.65rem; /* Atur ukuran font */
+}
+
+.clicked {
+    color: blue; /* warna untuk icon bookmark */
+}
+
+/* Form input yang berada di dalam segmen */
+.row.justify-content-left .input-group {
+    display: flex;
+    flex-wrap: nowrap; /* Mencegah wrapping ke baris baru */
+    margin-bottom: 0; /* Hapus margin bawah */
+}
+
+/* Input untuk posisi yang dicari */
+.row.justify-content-left #position {
+    flex: 1; /* Mengisi sebagian besar ruang yang tersedia */
+    margin-right: 1px; /* Jarak antara input posisi dan input lokasi */
+}
+
+/* Input untuk lokasi */
+.row.justify-content-left #location {
+    flex: 1; /* Mengisi sebagian besar ruang yang tersedia */
+    margin-right: 1px; /* Jarak antara input lokasi dan tombol apply */
+}
+
+/* Tombol apply */
+.row.justify-content-left #signup_button {
+    flex-shrink: 0; /* Tetapkan ukuran tombol agar tidak berkurang */
+}
+
+/* Testimoni */
+.testimonial {
+    display: flex;
+    align-items: center; /* Menyamakan vertikal */
+    margin-left: 1px;
+}
+
+.profile {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.info {
+    flex: 1;
+    display: flex; /* Menjadikan info sebagai flex container */
+    flex-direction: column; /* Mengatur bintang berada dalam satu kolom */
+}
+
+.name {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.stars {
+    display: flex; /* Menjadikan bintang sebagai flex container */
+    flex-direction: row; /* Mengatur bintang berada dalam satu baris */
+}
+
+.stars i {
+    margin-right: 5px;
+}
+
+/* End of Testimoni */
+
+/* start detail company */
+
+  /* End detail company */

@@ -26,6 +26,14 @@
   };
 })();
 
+var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+
 // Verify navbar blur on scroll
 if (document.getElementById('navbarBlur')) {
   navbarBlurOnScroll('navbarBlur');
@@ -443,6 +451,61 @@ function sidenavTypeOnResize() {
   }
 }
 
+// data tabel
+
+document.getElementById("searchInput").addEventListener("keyup", function() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td");
+      for (var j = 0; j < td.length; j++) {
+          if (td[j]) {
+              txtValue = td[j].textContent || td[j].innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = "";
+                  break;
+              } else {
+                  tr[i].style.display = "none";
+              }
+          }
+      }
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Mendapatkan elemen select untuk jumlah entri
+  var entriesSelect = document.getElementById("entriesSelect");
+
+  // Mendapatkan semua baris data dalam tabel
+  var tableRows = document.querySelectorAll("#myTable tbody tr");
+
+  // Fungsi untuk menyembunyikan semua baris tabel
+  function hideAllRows() {
+      tableRows.forEach(function(row) {
+          row.style.display = "none";
+      });
+  }
+
+  // Fungsi untuk menampilkan jumlah entri yang dipilih
+  function showSelectedEntries() {
+      // Mendapatkan jumlah entri yang dipilih
+      var selectedEntries = parseInt(entriesSelect.value);
+      // Menyembunyikan semua baris tabel
+      hideAllRows();
+      // Menampilkan jumlah entri yang dipilih
+      for (var i = 0; i < selectedEntries; i++) {
+          tableRows[i].style.display = "";
+      }
+  }
+
+  // Memanggil fungsi showSelectedEntries() saat halaman dimuat atau saat pilihan entri berubah
+  entriesSelect.addEventListener("change", showSelectedEntries);
+  document.addEventListener("DOMContentLoaded", showSelectedEntries);
+});
 
 // Tabs navigation
 

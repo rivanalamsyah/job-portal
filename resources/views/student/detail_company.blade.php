@@ -58,29 +58,25 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Akhir dari tombol navbar-toggler -->
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/dashboard" onclick="moveActiveLine(this)">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" onclick="moveActiveLine(this)">Job
-                            Portal</a>
+                        <a class="nav-link active" href="/main" onclick="moveActiveLine(this)">Job Portal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active"aria-current="page" href="/blog" onclick="moveActiveLine(this)">Blog</a>
+                        <a class="nav-link" href="/blog" onclick="moveActiveLine(this)">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/rapidonboarding" onclick="moveActiveLine(this)">Rapid Onboarding</a>
                     </li>
-                    <li class="nav-item ms-auto">
+                    <li class="nav-item">
                         <a class="nav-link" href="/orderhistory" onclick="moveActiveLine(this)">Order History</a>
                     </li>
                 </ul>
-            </div>
-            <div class="active-line" id="active-line"></div>
-            <div>
-                <ul class="navbar-nav" style="padding-left: 10px; padding-right: 10px;">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item d-flex align-items-center">
                         <a class="nav-link" href="/profile" onclick="moveActiveLine(this)">
                             <b style="color: navy;">LMS</b>
@@ -90,13 +86,14 @@
                     </li>
                 </ul>
             </div>
+            <div class="active-line" id="active-line"></div>
         </div>
     </nav>
     <!-- end Navbar -->
 
     <!-- start banner company-->
     <div class="container">
-        <img src="/img/background company/bg_company.png" class="img-fluid" alt="background-company"
+        <img src="/img/background/bg_company.png" class="img-fluid" alt="background-company"
             style="max-width: 100%; height: auto;">
     </div>
     <!-- end banner company-->

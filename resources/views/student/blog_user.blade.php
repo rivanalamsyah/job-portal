@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Custom CSS -->
-    <link href="css/style_blog.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/blog.css">
     <!-- Favicon -->
     <link rel="icon" href="/img/icon.png">
     <!-- Font Awesome -->
@@ -19,11 +19,10 @@
 
 <body>
     <!-- start Navbar -->
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://www.maxy.academy">
-                <img src="https://cms.maxy.academy//uploads/LogoMaxy.png" alt=""
+                <img src="https://cms.maxy.academy/uploads/LogoMaxy.png" alt="Maxy Academy"
                     class="d-inline-block align-text-top img-nav" style="max-width: 120px;">
             </a>
             <!-- Tombol navbar-toggler -->
@@ -32,30 +31,25 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Akhir dari tombol navbar-toggler -->
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/dashboard" onclick="moveActiveLine(this)">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/main" onclick="moveActiveLine(this)">Job
-                            Portal</a>
+                        <a class="nav-link" href="/main" onclick="moveActiveLine(this)">Job Portal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/blog"
-                            onclick="moveActiveLine(this)">Blog</a>
+                        <a class="nav-link active" href="/blog-student" onclick="moveActiveLine(this)">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/rapidonboarding" onclick="moveActiveLine(this)">Rapid Onboarding</a>
                     </li>
-                    <li class="nav-item ms-auto">
+                    <li class="nav-item">
                         <a class="nav-link" href="/orderhistory" onclick="moveActiveLine(this)">Order History</a>
                     </li>
                 </ul>
-                <div class="active-line" id="active-line"></div>
-            </div>
-            <div>
-                <ul class="navbar-nav" style="padding-left: 10px; padding-right: 10px;">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item d-flex align-items-center">
                         <a class="nav-link" href="/profile" onclick="moveActiveLine(this)">
                             <b style="color: navy;">LMS</b>
@@ -65,12 +59,13 @@
                     </li>
                 </ul>
             </div>
+            <div class="active-line" id="active-line"></div>
         </div>
     </nav>
     <!-- end Navbar -->
 
     <!-- Page header with logo and tagline-->
-    <header class="py-5 border-bottom mb-4" style="background-image: url('img/background company/header-blog.png');">
+    <header class="py-5 border-bottom mb-4" style="background-image: url('img/background/header-blog.png');">
         <div class="container">
             <div class="text-center my-5" style="color: rgb(255, 255, 255);">
                 <h1 class="fw-bolder">Welcome to MAXY Blog!</h1>
@@ -95,6 +90,9 @@
                             aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi
                             vero voluptate voluptatibus possimus, veniam magni quis!</p>
                         <a class="btn btn-primary" href="#!">Read more →</a>
+                        <a href="#" id="shareButton1">
+                            <i class="fas fa-share" style="margin-left: 10px;"></i> Share
+                        </a>
                     </div>
                 </div>
                 <!-- Nested row for non-featured blog posts-->
@@ -110,6 +108,9 @@
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Reiciendis aliquid atque, nulla.</p>
                                 <a class="btn btn-primary" href="#!">Read more →</a>
+                                <a href="#" id="shareButton1">
+                                    <i class="fas fa-share" style="margin-left: 10px;"></i> Share
+                                </a>
                             </div>
                         </div>
                         <!-- Blog post-->
@@ -122,6 +123,9 @@
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Reiciendis aliquid atque, nulla.</p>
                                 <a class="btn btn-primary" href="#!">Read more →</a>
+                                <a href="#" id="shareButton1">
+                                    <i class="fas fa-share" style="margin-left: 10px;"></i> Share
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -136,6 +140,9 @@
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Reiciendis aliquid atque, nulla.</p>
                                 <a class="btn btn-primary" href="#!">Read more →</a>
+                                <a href="#" id="shareButton1">
+                                    <i class="fas fa-share" style="margin-left: 10px;"></i> Share
+                                </a>
                             </div>
                         </div>
                         <!-- Blog post-->
@@ -148,6 +155,9 @@
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Reiciendis aliquid atque, nulla.</p>
                                 <a class="btn btn-primary" href="#!">Read more →</a>
+                                <a href="#" id="shareButton1">
+                                    <i class="fas fa-share" style="margin-left: 10px;"></i> Share
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -340,6 +350,65 @@
     </footer>
     <!-- footer-->
 
+    <!-- Modal Share -->
+    <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-white">
+                    <h5 class="modal-title" id="shareModalLabel">Choose Social Media to Share:</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 text-center mb-3">
+                            <a href="https://web.facebook.com/" class="text-dark">
+                                <i class="fab fa-facebook fa-3x"></i>
+                                <p>Facebook</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <a href="https://x.com/" class="text-dark">
+                                <i class="fab fa-twitter fa-3x"></i>
+                                <p>Twitter</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <a href="https://www.linkedin.com/" class="text-dark">
+                                <i class="fab fa-linkedin fa-3x"></i>
+                                <p>LinkedIn</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <a href="https://www.instagram.com/" class="text-dark">
+                                <i class="fab fa-instagram fa-3x"></i>
+                                <p>Instagram</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <a href="https://api.whatsapp.com/send?phone=YOURNUMBER" class="text-dark"
+                                target="_blank">
+                                <i class="fab fa-whatsapp fa-3x"></i>
+                                <p>WhatsApp</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <a href="https://mail.google.com/" class="text-dark">
+                                <i class="far fa-envelope fa-3x"></i>
+                                <p>Email</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <a href="https://www.tiktok.com/" class="text-dark">
+                                <i class="fab fa-tiktok fa-3x"></i>
+                                <p>TikTok</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- start copyright-->
     <div style="text-align: center; margin-top: 20px;">
         <hr style="border-top: 1px solid #ddd;">
@@ -350,12 +419,8 @@
 
     <!-- JavaScript and dependencies -->
     <script src="/js/onboarding_user.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-lRL88U29nMvPpLhluOrv9+2JeT7Uo6T3v8b7/pStUqYQrgaQQn5tEoQaXUtC+tGt" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-ckv5IIh0f9CMEU/t2GtibCIuP0lfQixkbcLw/Jq+2FpXkqVqcC2xSSCxXPAoIiBB" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

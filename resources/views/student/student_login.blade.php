@@ -2,19 +2,16 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/onboarding_user.css">
-    <!-- Favicon -->
-    <link rel="icon" href="/img/icon.png">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <title>Maxy Academy | {{ $title }}</title>
+
+    <link rel="stylesheet" href="/css/onboarding_user.css">
+    <link rel="icon" href="/img/icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body style="padding-top: 75px;">
@@ -32,29 +29,25 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Akhir dari tombol navbar-toggler -->
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/dashboard" onclick="moveActiveLine(this)">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/main" onclick="moveActiveLine(this)">Job
-                            Portal</a>
+                        <a class="nav-link active" href="/main" onclick="moveActiveLine(this)">Job Portal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/blog" onclick="moveActiveLine(this)">Blog</a>
+                        <a class="nav-link" href="/blog-student" onclick="moveActiveLine(this)">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/rapidonboarding" onclick="moveActiveLine(this)">Rapid Onboarding</a>
                     </li>
-                    <li class="nav-item ms-auto">
+                    <li class="nav-item">
                         <a class="nav-link" href="/orderhistory" onclick="moveActiveLine(this)">Order History</a>
                     </li>
                 </ul>
-            </div>
-            <div class="active-line" id="active-line"></div>
-            <div>
-                <ul class="navbar-nav" style="padding-left: 10px; padding-right: 10px;">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item d-flex align-items-center">
                         <a class="nav-link" href="/profile" onclick="moveActiveLine(this)">
                             <b style="color: navy;">LMS</b>
@@ -64,11 +57,9 @@
                     </li>
                 </ul>
             </div>
-        </div>
+            <div class="active-line" id="active-line"></div>
         </div>
     </nav>
-    <!-- start Navbar -->
-
     <!-- start container1 -->
     <div class="container-fluid background-container-user">
         <div class="row align-items-center">
@@ -105,9 +96,9 @@
     <!-- start candidates category-->
     <div class="container">
         <div class="row align-items-center">
-            <div class="col">
-                <h2 class="text-left mb-5">
-                    Candidates <span class="fw-bold text-warning"> Category</span> <!-- Judul kategori -->
+            <div class="col mb-4 mt-5">
+                <h2 class="text-left">
+                    Candidates <span class="fw-bold text-warning"> Category</span>
                 </h2>
             </div>
             <div class="col text-end">
@@ -115,126 +106,130 @@
             </div>
         </div>
         <div class="container">
-            <!-- Baris pertama dengan 4 tombol -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-                <div class="col mb-4">
-                    <button class="card" onclick="handleCardClick">
-                        <div class="row g-0">
-                            <div class="col-md-4">
+                <div class="col mb-3">
+                    <button class="card" onclick="handleCardClick()">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-3">
                                 <img src="/img/icon_category/mentor.png" class="img-fluid" alt="mentor"
                                     style="max-width: 100%;">
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <span class="small-bold">Teacher</span>
-                                    <span class="small">6 Position</span>
+                            <div class="col-md-9">
+                                <div class="d-flex flex-column">
+                                    <span class="small-bold mb-1">Teacher</span>
+                                    <span class="small">16 Position</span>
                                 </div>
                             </div>
                         </div>
                     </button>
                 </div>
-                <div class="col mb-4">
-                    <button class="card" onclick="handleCardClick">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/icon_category/design.png" class="img-fluid" alt="design">
+                <div class="col mb-3">
+                    <button class="card" onclick="handleCardClick()">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-3">
+                                <img src="/img/icon_category/design.png" class="img-fluid" alt="design"
+                                    style="max-width: 100%;">
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <span class="small-bold">Design</span>
-                                    <span class="small">6 Position</span>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <div class="col mb-4">
-                    <button class="card" onclick="handleCardClick">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/icon_category/finance.png" class="img-fluid" alt="finance">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <span class="small-bold">Finance</span>
-                                    <span class="small">6 Position</span>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <div class="col mb-4">
-                    <button class="card" onclick="handleCardClick">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/icon_category/industrial.png" class="img-fluid" alt="industrial">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <span class="small-bold">Industrial</span>
-                                    <span class="small">6 Position</span>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <!-- Baris baru untuk konten 4 kolom berikutnya -->
-                <div class="w-100"></div> <!-- Menggunakan w-100 untuk membuat baris baru -->
-                <div class="col mb-4">
-                    <button class="card" onclick="handleCardClick">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/icon_category/marketing.png" class="img-fluid" alt="marketing">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <span class="small-bold">Marketing</span>
-                                    <span class="small">6 Position</span>
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-                <div class="col mb-4">
-                    <button class="card" onclick="handleCardClick">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/icon_category/productivity.png" class="img-fluid" alt="productivity">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <span class="small-bold">Productivity</span>
+                            <div class="col-md-9">
+                                <div class="d-flex flex-column">
+                                    <span class="small-bold mb-1">Design</span>
                                     <span class="small">10 Position</span>
                                 </div>
                             </div>
                         </div>
                     </button>
                 </div>
-                <div class="col mb-4">
-                    <button class="card" onclick="handleCardClick">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/icon_category/sale.png" class="img-fluid" alt="sale">
+                <div class="col mb-3">
+                    <button class="card" onclick="handleCardClick()">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-3">
+                                <img src="/img/icon_category/finance.png" class="img-fluid" alt="finance"
+                                    style="max-width: 100%;">
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <span class="small-bold">Sales</span>
-                                    <span class="small">6 Position</span>
+                            <div class="col-md-9">
+                                <div class="d-flex flex-column">
+                                    <span class="small-bold mb-1">Finance</span>
+                                    <span class="small">15 Position</span>
                                 </div>
                             </div>
                         </div>
                     </button>
                 </div>
-                <div class="col mb-4">
-                    <button class="card" onclick="handleCardClick">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/icon_category/bisnis.png" class="img-fluid" alt="bisnis">
+                <div class="col mb-3">
+                    <button class="card" onclick="handleCardClick()">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-3">
+                                <img src="/img/icon_category/industrial.png" class="img-fluid" alt="industry"
+                                    style="max-width: 100%;">
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <span class="small-bold">Business</span>
-                                    <span class="small">6 Position</span>
+                            <div class="col-md-9">
+                                <div class="d-flex flex-column">
+                                    <span class="small-bold mb-1">Industry</span>
+                                    <span class="small">25 Position</span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="card" onclick="handleCardClick()">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-3">
+                                <img src="/img/icon_category/marketing.png" class="img-fluid" alt="marketing"
+                                    style="max-width: 100%;">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="d-flex flex-column">
+                                    <span class="small-bold mb-1">Marketing</span>
+                                    <span class="small">21 Position</span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="card" onclick="handleCardClick()">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-3">
+                                <img src="/img/icon_category/productivity.png" class="img-fluid" alt="product"
+                                    style="max-width: 100%;">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="d-flex flex-column">
+                                    <span class="small-bold mb-1">Product</span>
+                                    <span class="small">27 Position</span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="card" onclick="handleCardClick()">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-3">
+                                <img src="/img/icon_category/sale.png" class="img-fluid" alt="sales"
+                                    style="max-width: 100%;">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="d-flex flex-column">
+                                    <span class="small-bold mb-1">Sales</span>
+                                    <span class="small">15 Position</span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="card" onclick="handleCardClick()">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-3">
+                                <img src="/img/icon_category/bisnis.png" class="img-fluid" alt="business"
+                                    style="max-width: 100%;">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="d-flex flex-column">
+                                    <span class="small-bold mb-1">Business</span>
+                                    <span class="small">35 Position</span>
                                 </div>
                             </div>
                         </div>
@@ -246,10 +241,10 @@
     <!-- end candidates category-->
 
     <!-- start featured job -->
-    <div class="container mt-5px">
+    <div class="container">
         <div class="row align-items-center">
-            <div class="col">
-                <h2 class="text-left mb-5">
+            <div class="col mb-5 mt-5">
+                <h2 class="text-left">
                     Featured <span class="fw-bold text-primary">Job</span>
                 </h2>
             </div>
@@ -257,9 +252,7 @@
                 <button type="button" class="btn btn-outline-warning btn-sm">View All ></button>
             </div>
         </div>
-        <!-- Top Job Cards -->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-            <!-- First Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -294,7 +287,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Second Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -329,7 +321,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Third Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -364,7 +355,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Four Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -399,7 +389,6 @@
                     </div>
                 </div>
             </div>
-            <!-- First Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -434,7 +423,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Second Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -469,7 +457,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Third Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -504,7 +491,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Four Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -555,9 +541,7 @@
                 <button type="button" class="btn btn-outline-warning btn-sm">View All ></button>
             </div>
         </div>
-        <!-- Top Job Cards -->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-            <!-- First Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -593,7 +577,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Second Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -629,7 +612,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Third Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -665,7 +647,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Four Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -701,7 +682,6 @@
                     </div>
                 </div>
             </div>
-            <!-- First Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -737,7 +717,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Second Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -773,7 +752,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Third Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -809,7 +787,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Four Card -->
             <div class="col mb-3">
                 <div class="top-job-card card rounded">
                     <div class="card-body d-flex align-items-left">
@@ -932,16 +909,8 @@
     </div>`
     <!-- end copyright-->
 
-
     <!-- JavaScript and dependencies -->
     <script src="/js/onboarding_user.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-lRL88U29nMvPpLhluOrv9+2JeT7Uo6T3v8b7/pStUqYQrgaQQn5tEoQaXUtC+tGt" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-ckv5IIh0f9CMEU/t2GtibCIuP0lfQixkbcLw/Jq+2FpXkqVqcC2xSSCxXPAoIiBB" crossorigin="anonymous">
-    </script>
-
 </body>
 
 </html>

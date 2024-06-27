@@ -41,12 +41,12 @@
                             Portal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="/blog" onclick="moveActiveLine(this)">Blog</a>
+                        <a class="nav-link" href="/blog" onclick="moveActiveLine(this)">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/rapidonboarding" onclick="moveActiveLine(this)">Rapid Onboarding</a>
                     </li>
-                    <li class="nav-item ms-auto">
+                    <li class="nav-item">
                         <a class="nav-link" href="/orderhistory" onclick="moveActiveLine(this)">Order History</a>
                     </li>
                 </ul>
@@ -1073,13 +1073,8 @@
 
     <!-- JavaScript and dependencies -->
     <script src="/js/onboarding_user.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-lRL88U29nMvPpLhluOrv9+2JeT7Uo6T3v8b7/pStUqYQrgaQQn5tEoQaXUtC+tGt" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-ckv5IIh0f9CMEU/t2GtibCIuP0lfQixkbcLw/Jq+2FpXkqVqcC2xSSCxXPAoIiBB" crossorigin="anonymous">
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

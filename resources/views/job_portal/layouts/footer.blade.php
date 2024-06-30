@@ -54,25 +54,49 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="single-footer-caption mb-50">
                         <div class="footer-tittle">
-                            <h4>Social Media</h4>
-                            <ul class="list-unstyled social-media-icons">
-                                <li><a href="https://web.facebook.com/maxy.academy?_rdc=1&_rdr"
-                                        class="text-decoration-none" title="Visit us on Facebook"><i
-                                            class="fab fa-facebook-f fa-2x"></i></a></li>
-                                <li><a href="https://www.twitter.com" class="text-decoration-none"
-                                        title="Follow us on Twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
-                                <li><a href="https://www.instagram.com/maxy.academy/" class="text-decoration-none"
-                                        title="Follow us on Instagram"><i class="fab fa-instagram fa-2x"></i></a></li>
-
-                            </ul>
-                            <ul class="list-unstyled social-media-icons">
-                                <li><a href="https://www.linkedin.com/company/maxyacademy/" class="text-decoration-none"
-                                        title="Connect with us on LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <h4>Sosial Media</h4>
+                            <ul class="list-unstyled social-media-icons text-start" style="padding: 0;">
+                                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <a href="https://web.facebook.com/maxy.academy?_rdc=1&_rdr"
+                                        class="text-decoration-none" title="Visit us on Facebook"
+                                        style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                                        <i class="fab fa-facebook-f fa-2x" style="margin-right: 10px;"></i> Facebook
+                                    </a>
                                 </li>
-                                <li><a href="mailto:info@maxyacademy.com" class="text-decoration-none"
-                                        title="Email us"><i class="fas fa-envelope fa-2x"></i></a></li>
-                                <li><a href="https://wa.me/628113955599" class="text-decoration-none"
-                                        title="Chat with us on WhatsApp"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+                                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <a href="https://www.twitter.com" class="text-decoration-none"
+                                        title="Follow us on Twitter"
+                                        style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                                        <i class="fab fa-twitter fa-2x" style="margin-right: 10px;"></i> Twitter
+                                    </a>
+                                </li>
+                                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <a href="https://www.instagram.com/maxy.academy/" class="text-decoration-none"
+                                        title="Follow us on Instagram"
+                                        style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                                        <i class="fab fa-instagram fa-2x" style="margin-right: 10px;"></i> Instagram
+                                    </a>
+                                </li>
+                                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <a href="https://www.linkedin.com/company/maxyacademy/" class="text-decoration-none"
+                                        title="Connect with us on LinkedIn"
+                                        style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                                        <i class="fab fa-linkedin fa-2x" style="margin-right: 10px;"></i> LinkedIn
+                                    </a>
+                                </li>
+                                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <a href="mailto:info@maxyacademy.com" class="text-decoration-none" title="Email us"
+                                        style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                                        <i class="fas fa-envelope fa-2x" style="margin-right: 10px;"></i> Email
+                                    </a>
+                                </li>
+                                <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <a href="https://wa.me/628113955599" class="text-decoration-none"
+                                        title="Chat with us on WhatsApp"
+                                        style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                                        <i class="fab fa-whatsapp fa-2x" style="margin-right: 10px;"></i> WhatsApp
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

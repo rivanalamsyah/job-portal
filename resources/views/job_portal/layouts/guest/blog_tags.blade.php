@@ -1,29 +1,29 @@
 <aside class="single_sidebar_widget tag_cloud_widget">
-    <h4 class="widget_title">Tag Clouds</h4>
+    <h4 class="">Tag Clouds</h4>
     <ul class="list">
         <li>
-            <a href="#">project</a>
+            <a href="#">Project</a>
         </li>
         <li>
-            <a href="#">love</a>
+            <a href="#">Love</a>
         </li>
         <li>
-            <a href="#">technology</a>
+            <a href="#">Technology</a>
         </li>
         <li>
-            <a href="#">travel</a>
+            <a href="#">Travel</a>
         </li>
         <li>
-            <a href="#">restaurant</a>
+            <a href="#">Restaurant</a>
         </li>
         <li>
-            <a href="#">life style</a>
+            <a href="#">Life style</a>
         </li>
         <li>
-            <a href="#">design</a>
+            <a href="#">Design</a>
         </li>
         <li>
-            <a href="#">illustration</a>
+            <a href="#">Illustration</a>
         </li>
     </ul>
 </aside>

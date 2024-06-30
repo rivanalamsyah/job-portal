@@ -28,16 +28,11 @@
                                 <option value="">DKI Jakarta</option>
                                 <option value="">DI Yogyakarta</option>
                                 <option value="">Jawa Barat</option>
-                                <option value="">Jawa Tengah</option>
-                                <option value="">Jawa Timur</option>
-                                <option value="">Kalimantan</option>
-                                <option value="">Sulawesi</option>
-                                <option value="">Sumatera</option>
                             </select>
                         </div>
                     </div>
                     <div class="search-form">
-                        <a href="/job-listing-user">Find job</a>
+                        <a href="/job-listing-user" class="btn">Find job</a>
                     </div>
                 </form>
             </div>

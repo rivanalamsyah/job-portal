@@ -23,7 +23,7 @@
                         <!-- blog item Start-->
                         @include('job_portal.layouts.auth.blog_item')
                         <!-- blog item End-->
-                        
+
                     </div>
                 </div>
                 <div class="col-lg-4">

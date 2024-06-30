@@ -13,7 +13,7 @@
         @include('job_portal.layouts.guest.header_before')
         <!-- Header End -->
     </header>
-    
+
     <section class="blog_area section-padding pt-20 pb-20">
         <div class="container">
             <div class="row">
@@ -49,6 +49,10 @@
             </div>
         </div>
     </section>
+
+    <!-- banner start -->
+    @include('job_portal.layouts.banner')
+    <!-- banner End -->
 
     <!-- footer start -->
     @include('job_portal.layouts.footer')

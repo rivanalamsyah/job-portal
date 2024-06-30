@@ -2,76 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-// STUDENT //
-
-// Main Page
-Route::get('/main', function () {
-    return view('.student/onboarding_user', [
-        "title" => "Onboarding Student"
-    ]);
-});
-
-// login
-
-// Student Login
-Route::get('/student-login', function () {
-    return view('.student/student_login', [
-        "title" => "Student Login"
-    ]);
-});
-
-// Portal Category
-Route::get('/portal-category', function () {
-    return view('.student/portal_category', [
-        "title" => "Portal Category"
-    ]);
-});
-
-// Detail Company
-Route::get('/detail-company', function () {
-    return view('.student/detail_company', [
-        "title" => "Detail Company"
-    ]);
-});
-
-// Forgot Password
-Route::get('/forgot-password', function () {
-    return view('.student/forgot_password', [
-        "title" => "Forgot Password"
-    ]);
-});
-
-// Profile Company
-Route::get('/profile', function () {
-    return view('.student/profile_company', [
-        "title" => "Profile Company"
-    ]);
-});
-
-// Search User
-Route::get('/search-user', function () {
-    return view('.student/search_user', [
-        "title" => "Search User"
-    ]);
-});
-
-// Dashboard
-Route::get('/dashboard-student', function () {
-    return view('.student/dashboard_student', [
-        "title" => "Dashboard Student"
-    ]);
-});
-
-// Blog
-Route::get('/blog-student', function () {
-    return view('.student/blog_user', [
-        "title" => "Blog"
-    ]);
-});
-
-// END STUDENT
-
-// COMPANY //
+// START COMPANY //
 
 Route::get('/dashboard-company', function () {
     return view('.dashboard_company.dashboard_company', [
@@ -133,9 +64,16 @@ Route::get('/new-job', function () {
         "title" => "New Job"
     ]);
 });
+
+Route::get('/bill-ads', function () {
+    return view('.dashboard_company.bill_ads', [
+        "title" => "Bill Ads"
+    ]);
+});
 // END COMPANY //
 
-// ADMIN //
+
+// START ADMIN //
 
 Route::get('/signin-admin', function () {
     return view('.dashboard_admin.signin_admin', [
@@ -206,9 +144,7 @@ Route::get('/edit-blog', function () {
 // END ADMIN //
 
 
-
-
-// START JOB PORTAL //
+// START JOB PORTAL / STUDENT BEFORE LOGIN //
 
 Route::get('/signin-student', function () {
     return view('.job_portal/signin_student', [
@@ -254,7 +190,7 @@ Route::get('/blog-details-user', function () {
 });
 
 
-// START DONE LOGIN JOB PORTAL //
+// START JOB PORTAL / STUDENT DONE LOGIN  //
 
 Route::get('/main-page', function () {
     return view('.job_portal.auth.main_page', [
@@ -292,9 +228,23 @@ Route::get('/company-profile-details', function () {
     ]);
 });
 
+// NEW FITUR FOR STUDENT PROFILE //
+
 Route::get('/profile-student', function () {
     return view('.job_portal.auth.profile_student', [
-        "title" => "Student Profile"
+        "title" => "Profile Student"
+    ]);
+});
+
+Route::get('/activity-student', function () {
+    return view('.job_portal.auth.applied_student', [
+        "title" => "Applied Student"
+    ]);
+});
+
+Route::get('/save-job', function () {
+    return view('.job_portal.auth.save_job_student', [
+        "title" => "Save Job Student"
     ]);
 });
 

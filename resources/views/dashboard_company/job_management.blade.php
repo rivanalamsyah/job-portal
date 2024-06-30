@@ -1117,7 +1117,7 @@
                                                                     <li><i class="fas fa-check-circle"></i> Customer
                                                                         support via email</li>
                                                                 </ul>
-                                                                <a href="/package1"
+                                                                <a href="/bill-ads"
                                                                     class="btn btn-primary">Upgrade</a>
                                                             </div>
                                                         </div>
@@ -1143,7 +1143,7 @@
                                                                     <li><i class="fas fa-check-circle"></i> Customer
                                                                         support via email</li>
                                                                 </ul>
-                                                                <a href="/package2"
+                                                                <a href="/bill-ads"
                                                                     class="btn btn-primary">Upgrade</a>
                                                             </div>
                                                         </div>
@@ -1170,7 +1170,7 @@
                                                                     <li><i class="fas fa-check-circle"></i> Customer
                                                                         support via email</li>
                                                                 </ul>
-                                                                <a href="/package3"
+                                                                <a href="/bill-ads"
                                                                     class="btn btn-primary">Upgrade</a>
                                                             </div>
                                                         </div>
@@ -1198,7 +1198,7 @@
                                                                     <li><i class="fas fa-check-circle"></i> Customer
                                                                         support via email</li>
                                                                 </ul>
-                                                                <a href="/package4"
+                                                                <a href="/bill-ads"
                                                                     class="btn btn-primary">Upgrade</a>
                                                             </div>
                                                         </div>

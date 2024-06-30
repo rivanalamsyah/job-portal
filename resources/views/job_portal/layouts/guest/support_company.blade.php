@@ -18,7 +18,7 @@
                             find jobs that suit their skills. This job portal makes it easier for job seekers to
                             access various vacancies in the field of education and training, as well as
                             providing useful information and resources for their career development.</p>
-                        <a href="/signin-company" class="btn post-btn">Post a job</a>
+                        <a href="/signin-company" class="btn btn-primary">Post a job</a>
                     </div>
                 </div>
             </div>

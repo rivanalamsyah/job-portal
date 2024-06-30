@@ -23,8 +23,8 @@
                                     History</strong></a></li>
                     </ul>
                     <div class="header-btn ml-auto">
-                        <a href="/signup-user" class="btn head-btn1">Register</a>
-                        <a href="/signin-user" class="btn head-btn2">Login</a>
+                        <a href="/signup-student" class="btn btn-outline-warning">Register</a>
+                        <a href="/signin-student" class="btn btn-warning">Login</a>
                     </div>
                 </div>
             </nav>

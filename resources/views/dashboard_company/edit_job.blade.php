@@ -218,7 +218,7 @@
                                     <div class="row gx-4">
                                         <p class="text-uppercase text-sm">Edit Job Information</p>
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="position-required" class="form-control-label">Position
                                                         Required</label>
@@ -226,12 +226,24 @@
                                                         placeholder="Enter Position Required">
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="location-input"
-                                                        class="form-control-label">Location</label>
-                                                    <input id="location-input" class="form-control" type="text"
-                                                        placeholder="Enter Location">
+                                                    <label for="position-required" class="form-control-label">Amount
+                                                        Required</label>
+                                                    <input id="position-required" class="form-control" type="text"
+                                                        placeholder="Enter Position Required">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="location-select" class="form-control-label">Select
+                                                        Location</label>
+                                                    <select id="location-select" class="form-control">
+                                                        <option value="">Choose Location</option>
+                                                        <option value="location1">DKI Jakarta</option>
+                                                        <option value="location2">DI Yogyakarta</option>
+                                                        <option value="location3">Surabaya</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -382,42 +394,6 @@
                                             <div id="editor2" class="editor-container"></div>
                                         </div>
                                         <hr class="horizontal dark">
-                                        <div class="mt-4">
-                                            <p class="text-uppercase text-sm">Our values</p>
-                                            <!-- Quill Toolbar -->
-                                            <div id="toolbar3" class="toolbar">
-                                                <span class="ql-formats">
-                                                    <select class="ql-header">
-                                                        <option selected></option>
-                                                        <option value="1"></option>
-                                                        <option value="2"></option>
-                                                    </select>
-                                                    <select class="ql-font"></select>
-                                                </span>
-                                                <span class="ql-formats">
-                                                    <button class="ql-bold"></button>
-                                                    <button class="ql-italic"></button>
-                                                    <button class="ql-underline"></button>
-                                                    <button class="ql-strike"></button>
-                                                </span>
-                                                <span class="ql-formats">
-                                                    <button class="ql-list" value="ordered"></button>
-                                                    <button class="ql-list" value="bullet"></button>
-                                                    <button class="ql-indent" value="-1"></button>
-                                                    <button class="ql-indent" value="+1"></button>
-                                                </span>
-                                                <span class="ql-formats">
-                                                    <select class="ql-align"></select>
-                                                </span>
-                                                <span class="ql-formats">
-                                                    <button class="ql-link"></button>
-                                                    <button class="ql-image"></button>
-                                                    <button class="ql-video"></button>
-                                                </span>
-                                            </div>
-                                            <div id="editor3" class="editor-container"></div>
-                                        </div>
-                                        <hr class="horizontal dark">
                                         <div class="col-md-6">
                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                                 data-bs-target="#successModal">
@@ -430,7 +406,6 @@
                                             </a>
                                         </div>
 
-                                        <!-- Modal -->
                                         <!-- Modal -->
                                         <div class="modal fade" id="successModal" tabindex="-1"
                                             aria-labelledby="successModalLabel" aria-hidden="true">
@@ -448,7 +423,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- End Modal -->
                                         <!-- End Modal -->
                                     </div>
                                 </div>

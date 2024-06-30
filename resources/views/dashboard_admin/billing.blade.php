@@ -9,6 +9,7 @@
     <link rel="icon" href="/img/icon.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css">
 
     <title>Maxy Academy | {{ $title }}</title>
@@ -336,8 +337,22 @@
                                                     onmouseover="this.style.color='blue'"
                                                     onmouseout="this.style.color='inherit'" download>View</a>
                                             </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Paid</span>
+                                            <td class="align-middle text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="statusDropdown1" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Pending
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown1">
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Paid', 'statusDropdown1')">Paid</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Unpaid', 'statusDropdown1')">Unpaid</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -364,8 +379,22 @@
                                                     onmouseover="this.style.color='blue'"
                                                     onmouseout="this.style.color='inherit'" download>View</a>
                                             </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Paid</span>
+                                            <td class="align-middle text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="statusDropdown2" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Pending
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown2">
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Paid', 'statusDropdown2')">Paid</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Unpaid', 'statusDropdown2')">Unpaid</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -391,8 +420,22 @@
                                                     onmouseover="this.style.color='blue'"
                                                     onmouseout="this.style.color='inherit'" download>View</a>
                                             </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Paid</span>
+                                            <td class="align-middle text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="statusDropdown3" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Pending
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown3">
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Paid', 'statusDropdown3')">Paid</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Unpaid', 'statusDropdown3')">Unpaid</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -419,8 +462,22 @@
                                                     onmouseover="this.style.color='blue'"
                                                     onmouseout="this.style.color='inherit'" download>View</a>
                                             </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Paid</span>
+                                            <td class="align-middle text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="statusDropdown4" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Pending
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown4">
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Paid', 'statusDropdown4')">Paid</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Unpaid', 'statusDropdown4')">Unpaid</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -448,8 +505,22 @@
                                                     onmouseover="this.style.color='blue'"
                                                     onmouseout="this.style.color='inherit'" download>View</a>
                                             </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Paid</span>
+                                            <td class="align-middle text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="statusDropdown5" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Pending
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown5">
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Paid', 'statusDropdown5')">Paid</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Unpaid', 'statusDropdown5')">Unpaid</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -477,8 +548,22 @@
                                                     onmouseover="this.style.color='blue'"
                                                     onmouseout="this.style.color='inherit'" download>View</a>
                                             </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Paid</span>
+                                            <td class="align-middle text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="statusDropdown6" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Pending
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown6">
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Paid', 'statusDropdown6')">Paid</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Unpaid', 'statusDropdown6')">Unpaid</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -506,8 +591,22 @@
                                                     onmouseover="this.style.color='blue'"
                                                     onmouseout="this.style.color='inherit'" download>View</a>
                                             </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Paid</span>
+                                            <td class="align-middle text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="statusDropdown7" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Pending
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown7">
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Paid', 'statusDropdown7')">Paid</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Unpaid', 'statusDropdown7')">Unpaid</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -534,8 +633,22 @@
                                                     onmouseover="this.style.color='blue'"
                                                     onmouseout="this.style.color='inherit'" download>View</a>
                                             </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Paid</span>
+                                            <td class="align-middle text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="statusDropdown8" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Pending
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown8">
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Paid', 'statusDropdown8')">Paid</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Unpaid', 'statusDropdown8')">Unpaid</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -562,8 +675,22 @@
                                                     onmouseover="this.style.color='blue'"
                                                     onmouseout="this.style.color='inherit'" download>View</a>
                                             </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Paid</span>
+                                            <td class="align-middle text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="statusDropdown9" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Pending
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown9">
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Paid', 'statusDropdown9')">Paid</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Unpaid', 'statusDropdown9')">Unpaid</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -590,8 +717,22 @@
                                                     onmouseover="this.style.color='blue'"
                                                     onmouseout="this.style.color='inherit'" download>View</a>
                                             </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="badge badge-sm bg-gradient-success">Paid</span>
+                                            <td class="align-middle text-center">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="statusDropdown10"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Pending
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown10">
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Paid', 'statusDropdown10')">Paid</button>
+                                                        </li>
+                                                        <li><button class="dropdown-item" type="button"
+                                                                onclick="setStatus('Unpaid', 'statusDropdown10')">Unpaid</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -813,10 +954,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         $('.editIcon').on('click', function() {
             $('.editModal').modal('show');
         });
+    </script>
+    <<script>
+        function setStatus(status, dropdownId) {
+            const dropdownButton = document.getElementById(dropdownId);
+            dropdownButton.innerText = status;
+            let badgeColor;
+            switch (status) {
+                case 'Paid':
+                    badgeColor = 'btn-success';
+                    break;
+                case 'Unpaid':
+                    badgeColor = 'btn-danger';
+                    break;
+                default:
+                    badgeColor = 'btn-secondary';
+            }
+            dropdownButton.classList.remove('btn-secondary', 'btn-success', 'btn-danger');
+            dropdownButton.classList.add(badgeColor);
+        }
     </script>
 </body>
 

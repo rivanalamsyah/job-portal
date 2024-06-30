@@ -38,7 +38,7 @@
                                 style="width: 85px; height: 85px; border-radius: 15px; margin-bottom:10px">
                             <div class="ms-3">
                                 <h5 class="mb-0">System Analyst</h5>
-                                <h6 class="mb-0">SEO Specialist</h6>
+                                <h6 class="mb-0">PT Traveloka</h6>
                                 <p class="mb-0"><i class="fas fa-dollar-sign"></i> Rp 5.000.000</p>
                             </div>
                         </a>

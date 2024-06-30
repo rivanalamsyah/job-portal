@@ -619,7 +619,7 @@
                                                 <p class="text-sm font-weight-bold mb-0">5</p>
                                             </td>
                                             <td>
-                                                <span class="text-xs font-weight-bold">25/09/24</span>
+                                                <span class="text-xs font-weight-bold">25/09/24 10:00</span>
                                             </td>
                                             <td class="align-middle text-center">
                                                 <div class="d-flex align-items-center justify-content-center">
@@ -647,7 +647,7 @@
                                                 <p class="text-sm font-weight-bold mb-0">3</p>
                                             </td>
                                             <td>
-                                                <span class="text-xs font-weight-bold">17/10/24</span>
+                                                <span class="text-xs font-weight-bold">17/10/24 10:00</span>
                                             </td>
                                             <td class="align-middle text-center">
                                                 <div class="d-flex align-items-center justify-content-center">
@@ -675,7 +675,7 @@
                                                 <p class="text-sm font-weight-bold mb-0">2</p>
                                             </td>
                                             <td>
-                                                <span class="text-xs font-weight-bold">15/09/24</span>
+                                                <span class="text-xs font-weight-bold">15/09/24 10:00</span>
                                             </td>
                                             <td class="align-middle text-center">
                                                 <div class="d-flex align-items-center justify-content-center">
@@ -704,7 +704,7 @@
                                                 <p class="text-sm font-weight-bold mb-0">4</p>
                                             </td>
                                             <td>
-                                                <span class="text-xs font-weight-bold">07/08/24</span>
+                                                <span class="text-xs font-weight-bold">07/08/24 10:00</span>
                                             </td>
                                             <td class="align-middle text-center">
                                                 <div class="d-flex align-items-center justify-content-center">
@@ -732,7 +732,7 @@
                                                 <p class="text-sm font-weight-bold mb-0">2</p>
                                             </td>
                                             <td>
-                                                <span class="text-xs font-weight-bold">10/08/24</span>
+                                                <span class="text-xs font-weight-bold">10/08/24 10:00</span>
                                             </td>
                                             <td class="align-middle text-center">
                                                 <div class="d-flex align-items-center justify-content-center">
@@ -760,7 +760,7 @@
                                                 <p class="text-sm font-weight-bold mb-0">3</p>
                                             </td>
                                             <td>
-                                                <span class="text-xs font-weight-bold">25/08/24</span>
+                                                <span class="text-xs font-weight-bold">25/08/24 10:00</span>
                                             </td>
                                             <td class="align-middle text-center">
                                                 <div class="d-flex align-items-center justify-content-center">

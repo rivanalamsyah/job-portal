@@ -1,5 +1,4 @@
-<!-- Left content -->
-<div class="col-xl-3 col-lg-3 col-md-4">
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
     <div class="row">
         <div class="col-12">
             <div class="small-section-tittle2 mb-50">
@@ -73,9 +72,8 @@
                     <option value="">Anywhere</option>
                     <option value="">DKI Jakarta</option>
                     <option value="">DI Yogyakarta</option>
-                    <option value="">Jawa Barat</option>
+                    <option value="">Surabaya</option>
                     <option value="">Jawa Tengah</option>
-                    <option value="">Jawa Timur</option>
                 </select>
             </div>
             <!--  Select job items End-->
@@ -157,4 +155,3 @@
     </div>
     <!-- Job Category Listing End -->
 </div>
-<!-- Right content -->

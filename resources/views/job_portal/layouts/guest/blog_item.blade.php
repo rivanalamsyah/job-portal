@@ -7,7 +7,8 @@
         </a>
     </div>
     <div class="blog_details">
-        <a class="d-inline-block" href="/blog-details-user">
+        <a class="d-inline-block" href="/blog-details-user"
+            onclick="setBlogDetails('How IoT is Connecting the World', 'img/blog/foto1.jpg')">
             <h2>How IoT is Connecting the World</h2>
         </a>
         <p>That dominion stars lights dominion divide years for fourth have don't stars is that
@@ -18,6 +19,7 @@
         </ul>
     </div>
 </article>
+
 <article class="blog_item">
     <div class="blog_item_img">
         <img class="card-img rounded-0" src="img/blog/foto2.jpg" alt="blog2">
@@ -27,7 +29,8 @@
         </a>
     </div>
     <div class="blog_details">
-        <a class="d-inline-block" href="/blog-details-user">
+        <a class="d-inline-block" href="/blog-details-user"
+            onclick="setBlogDetails('Must-Have Mobile Apps for Professionals', 'img/blog/foto2.jpg')">
             <h2>Must-Have Mobile Apps for Professionals</h2>
         </a>
         <p>That dominion stars lights dominion divide years for fourth have don't stars is that
@@ -38,6 +41,7 @@
         </ul>
     </div>
 </article>
+
 <article class="blog_item">
     <div class="blog_item_img">
         <img class="card-img rounded-0" src="img/blog/foto3.jpg" alt="blog3">
@@ -47,7 +51,8 @@
         </a>
     </div>
     <div class="blog_details">
-        <a class="d-inline-block" href="/blog-details-user">
+        <a class="d-inline-block" href="/blog-details-user"
+            onclick="setBlogDetails('Blockchain: The Future of Secure Transactions', 'img/blog/foto3.jpg')">
             <h2>Blockchain: The Future of Secure Transactions</h2>
         </a>
         <p>That dominion stars lights dominion divide years for fourth have don't stars is that
@@ -58,6 +63,13 @@
         </ul>
     </div>
 </article>
+
+<script>
+    function setBlogDetails(title, imageUrl) {
+        localStorage.setItem('blogTitle', title);
+        localStorage.setItem('blogImageUrl', imageUrl);
+    }
+</script>
 
 <nav class="blog-pagination justify-content-center d-flex">
     <ul class="pagination">

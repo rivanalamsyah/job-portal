@@ -2,7 +2,7 @@
     <div class="post-details1 mb-50">
         <!-- Small Section Tittle -->
         <div class="small-section-tittle">
-            <h4>Job Description</h4>
+            <h4>About the job</h4>
         </div>
         <p>We are seeking a dynamic and creative Digital Marketing Specialist to join our team.
             In this role, you will be responsible for developing, implementing, and managing our
@@ -19,7 +19,7 @@
     <div class="post-details2  mb-50">
         <!-- Small Section Tittle -->
         <div class="small-section-tittle">
-            <h4>Required Knowledge, Skills, and Abilities</h4>
+            <h4>Requirements</h4>
         </div>
         <ul>
             <li>Solid understanding of digital marketing concepts, including SEO, SEM, PPC,
@@ -40,19 +40,6 @@
             <li>Strong attention to detail and accuracy.</li>
             <li>Ability to analyze and interpret data to make informed decisions and
                 recommendations.</li>
-        </ul>
-    </div>
-    <div class="post-details2  mb-50">
-        <!-- Small Section Tittle -->
-        <div class="small-section-tittle">
-            <h4>Education + Experience</h4>
-        </div>
-        <ul>
-            <li>3 or more years of professional design experience</li>
-            <li>Direct response email experience</li>
-            <li>Ecommerce website design experience</li>
-            <li>Familiarity with mobile and web apps preferred</li>
-            <li>Experience using Invision a plus</li>
         </ul>
     </div>
 </div>

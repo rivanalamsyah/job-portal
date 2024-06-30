@@ -723,7 +723,6 @@
                             </div>
                         </div>
                         <!-- Message Modal -->
-                        <!-- Message Modal -->
                         <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-lg">

@@ -27,7 +27,7 @@
                         <a href="/profile-student" class="btn"
                             style="font-size: 20px; color: #1e007a; font-weight: bold; margin-right: 20px;">LMS</a>
                         <a href="/profile-student">
-                            <img src="/img/people1.jpg" alt="Profile" class="rounded-circle"
+                            <img src="/img/avatars/profile.jpg" alt="Profile" class="rounded-circle"
                                 style="width: 50px; height: 50px;">
                         </a>
                     </div>

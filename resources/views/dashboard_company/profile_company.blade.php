@@ -213,11 +213,6 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="card">
-                            <div class="card-header pb-0">
-                                <div class="d-flex align-items-center">
-                                    <p class="mb-0">Edit Profile</p>
-                                </div>
-                            </div>
                             <div class="card-body">
                                 <p class="text-uppercase text-sm">Company Information</p>
                                 <div class="row">
@@ -372,7 +367,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card card-profile">
-                            <img src="/img/bg-profile.jpg" alt="Image placeholder" class="card-img-top">
+                            <img src="/img/background/background_traveloka.jpg" alt="Image placeholder" class="card-img-top">
                             <div class="row justify-content-center">
                                 <div class="col-4 col-lg-4 order-lg-2">
                                     <div class="mt-n4 mt-lg-n6 mb-4 mb-lg-0">

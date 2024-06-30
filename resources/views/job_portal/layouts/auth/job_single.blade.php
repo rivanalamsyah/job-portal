@@ -10,8 +10,10 @@
             </h4>
             <span class="type-job" style="position: absolute; top: 0; right: 0;">Fulltime</span>
             <h5>{{ isset($_GET['company']) ? $_GET['company'] : 'Company Name Not Found' }}</h5>
-            <span style="display: inline-block; margin-right: 10px;"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia </span>
-            <span style="display: inline-block; margin-right: 10px;"><i class="fas fa-dollar-sign"></i> Rp 5.000.000 - Rp 10.000.000 </span>
+            <span style="display: inline-block; margin-right: 10px;"><i class="fas fa-map-marker-alt"></i> Jakarta,
+                Indonesia </span>
+            <span style="display: inline-block; margin-right: 10px;"><i class="fas fa-dollar-sign"></i> Rp 5.000.000 -
+                Rp 10.000.000 </span>
             <ul class="mb-20"></ul>
             <a href="/company-profile-details" style="text-decoration: none;">
                 <span class="btn btn-primary">View Company Profile</span>

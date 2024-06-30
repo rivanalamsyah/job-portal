@@ -5,12 +5,9 @@
                 <input type="text" class="form-control" placeholder='Search Keyword'
                     onfocus="this.placeholder = ''"
                     onblur="this.placeholder = 'Search Keyword'">
-                <div class="input-group-append">
-                    <button class="btns" type="button"><i class="ti-search"></i></button>
-                </div>
             </div>
         </div>
-        <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+        <button class="btn btn-outline-primary w-100"
             type="submit">Search</button>
     </form>
 </aside>

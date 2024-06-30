@@ -15,7 +15,7 @@
         </ul>
         <div class="apply-btn2 mb-50">
             <a href="#" class="btn btn-primary" id="applyBtn">Apply Now</a>
-            <a href="/profile-student" class="btn btn-outline-primary">Save</a>
+            <a href="/save-job" class="btn btn-outline-primary">Save</a>
         </div>
         <div class="small-section-tittle">
             <h4>Company Information:</h4>

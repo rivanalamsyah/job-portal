@@ -42,6 +42,10 @@
         <!-- job post company End -->
     </main>
 
+    <!-- banner start -->
+    @include('job_portal.layouts.banner')
+    <!-- banner End -->
+
     <!-- footer start -->
     @include('job_portal.layouts.footer')
     <!-- footer End -->
